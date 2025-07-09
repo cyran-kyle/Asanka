@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f8f9fa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app-container {
   min-height: 100vh;
+}
+
+.sidebar {
+  background-color: #ffffff;
+  padding: 30px;
+  border-right: 1px solid #dee2e6;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.app-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+.app-subtitle {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #495057;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  border-radius: 0.25rem;
+}
+
+.btn-primary {
+  background-color: #e8491d; /* A vibrant, food-like color */
+  border-color: #e8491d;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin-top: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #d83c0d;
+  border-color: #d83c0d;
+}
+
+.recipe-output {
+  padding: 40px;
+  background-color: #f8f9fa;
+}
+
+.recipe-output h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+.recipe-output h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #495057;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.recipe-output ul, .recipe-output ol {
+  padding-left: 20px;
+}
+
+.recipe-output li {
+  margin-bottom: 10px;
+}
+
+.placeholder-text {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  color: #6c757d;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.placeholder-text h3 {
+  font-size: 1.5rem;
 }
